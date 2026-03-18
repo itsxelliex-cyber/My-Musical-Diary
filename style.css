@@ -1,6 +1,45 @@
 h1 {
     font-family:"Bitcount Grid Double Ink" ;
-    font-size: 2.5em;
+    font-size: 3.5em;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 320px;
+}
+body {
+    background-image: url('cantaloupe.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    text-align: center;
+}
+audio#bg-audio {
+    position: absolute;
+    left: -9999px; 
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+button {
+    display: inline-block;
+    margin: 20px; 
+    font-family: "Bitcount Grid Double Ink";
+    font-size: 2em;
+    padding: 10px 20px;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255, 188, 224, 0.8);
+    cursor: pointer;
+}
+button2 {
+    display: inline-block;
+    margin: 30px; 
+    font-family: "Bitcount Grid Double Ink";
+    font-size: 2em;
+    padding: 10px 20px;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255, 188, 224, 0.8);
+    cursor: pointer;
 }
