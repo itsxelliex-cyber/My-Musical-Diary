@@ -4,14 +4,72 @@ h1 {
     text-align: center;
     margin-top: 320px;
 }
-body {
+h2.stage {
+    font-family:"Bitcount Grid Double Ink" ;
+    font-size: 3.5em;
+    text-align: center;
+    margin-top: 320px;
+}
+h2.diary {
+    font-family:inherit ;
+    font-size: 3.5em;
+    text-align: center;
+    margin-top: 200px;
+}
+.modal-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    z-index: 999;
+    padding: 20px;
+}
+.modal-container.show {
+    display: flex;
+}
+.modal {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+}
+#open-modal {
+    display: inline-block;
+    margin: 20px;
+    display: inline-block;
+    margin-top: 600px; 
+    margin-left: 20px;
+    margin-right: 20px;
+}
+body.stage {
     background-image: url('cantaloupe.jpg');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
     min-height: 100vh;
     text-align: center;
+    cursor: url('pen.png') 16 16, auto;
+    font-family: "Bitcount Grid Double Ink", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
 }
+body.diary {
+    background-image: url('caca.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    text-align: center;
+    cursor: url('pen.png') 16 16, auto;
+    font-family: "Bitcount Grid Double Ink", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+
 audio#bg-audio {
     position: absolute;
     left: -9999px; 

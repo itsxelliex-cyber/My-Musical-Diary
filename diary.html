@@ -10,16 +10,22 @@
 <link href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double+Ink:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1> Welcome to My Musical Diary! </h1>
+    <body class="diary"> 
+    <h2> In this journal, you can write the best, most amazing songs ever! </h2>
+   </body>
 
-    <button id="stage-btn" type="button"> Main Page(Stage) </button>
+       <button id="open-modal" type="button">Open Journal</button>
+   <div class="modal-container" aria-hidden="true">
+      <div class="modal" role="dialog" aria-modal="true">
+        <textarea id="journal-text" rows="12" placeholder="Write your song ideas here..." style="width:100%; box-sizing:border-box;"></textarea>
+        <div style="margin-top:12px;">
+          <button id="save-journal" type="button">Save</button>
+          <button id="close-modal" type="button">Close</button>
+        </div>
+      </div>
+    </div>
 
-    <button id="audio-btn" type="button2"> audio! </button>
-
-    <audio id="bg-audio" controls preload="auto" loop autoplay muted playsinline aria-hidden="true">
-    <source src="girllikeme.mp3" type="audio/mpeg">
-    Your browser does not support the audio element.
-        </audio>
+   
 
     <script src="script.js"></script>
 </body>
